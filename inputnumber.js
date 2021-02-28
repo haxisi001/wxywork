@@ -39,7 +39,6 @@ class InputNumber extends Component{
            <input 
            value={`${this.value}`} 
            onChange = {(e)=>{
-               console.log('isControl:'+!this.isControl)
                 if (!this.isControl) {
                     this.setState({
                         value : e.target.value
@@ -52,7 +51,4 @@ class InputNumber extends Component{
         )
     }
 }
-
-
-
 export default InputNumber;
